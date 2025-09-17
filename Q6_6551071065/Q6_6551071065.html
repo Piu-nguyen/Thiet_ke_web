@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Form Test</title>
+	<style>
+		body {
+			font-family: Times New Roman, serif;
+		}
+		.form-title {
+			text-align: center;
+			font-size: 1.5em;
+			font-weight: bold;
+			margin-top: 30px;
+		}
+		.ex10 {
+			color: #6b2c1a;
+			font-size: 2em;
+			font-weight: bold;
+			float: right;
+			margin-top: -40px;
+			margin-right: 80px;
+		}
+		table {
+			margin: 0 auto;
+		}
+		td {
+			padding: 8px 10px;
+			font-size: 1.1em;
+		}
+		textarea {
+			width: 350px;
+			height: 120px;
+		}
+		input[type="text"], input[type="email"] {
+			width: 180px;
+			padding: 4px;
+		}
+		select {
+			width: 190px;
+			padding: 4px;
+		}
+		.form-btn {
+			padding: 4px 18px;
+			font-size: 1em;
+		}
+	</style>
+</head>
+<body>
+	<table style="margin: 0 auto; width: 600px;">
+		<tr>
+			<td style="text-align:center; font-size:1.5em; font-weight:bold;">HTML Form Test</td>
+			<td style="text-align:right; color:#6b2c1a; font-size:2em; font-weight:bold;">Ex - 10</td>
+		</tr>
+	</table>
+	<form>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<input type="radio" name="gender" value="male"> Male
+					<input type="radio" name="gender" value="female"> Female
+				</td>
+			</tr>
+			<tr>
+				<td>Hobbies</td>
+				<td>
+					<input type="checkbox" name="hobbies" value="sports"> Sports
+					<input type="checkbox" name="hobbies" value="movies"> Movies
+					<input type="checkbox" name="hobbies" value="travelling"> Travelling
+				</td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td>
+					<select name="country">
+						<option>Nepal</option>
+						<option>India</option>
+						<option>USA</option>
+						<option>UK</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Message</td>
+				<td><textarea name="message"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="Submit" class="form-btn">
+					<input type="reset" value="Reset" class="form-btn">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
